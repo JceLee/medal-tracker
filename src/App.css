@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+input {
+  margin: 0;
+}
+
 .container {
   max-width: 1000px;
   margin: 40px auto;
@@ -28,6 +32,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  gap: 8px;
+  align-items: flex-end;
 }
 
 .input-field {
@@ -44,7 +50,6 @@ h1 {
 input[type="text"],
 input[type="number"] {
   padding: 10px;
-  margin-right: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
@@ -60,6 +65,13 @@ button {
   font-size: 14px;
   font-weight: bold;
   align-self: center;
+}
+
+.button-group {
+  flex-shrink: 0;
+  display: flex;
+  gap: 10px;
+  align-items: end;
 }
 
 button:hover {

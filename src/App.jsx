@@ -112,14 +112,12 @@ function App() {
             onChange={(e) => setBronze(e.target.value)}
           />
         </div>
-        <button type="submit">국가 추가</button>
-        <button
-          type="button"
-          onClick={handleUpdateCountry}
-          style={{ marginLeft: "10px" }}
-        >
-          업데이트
-        </button>
+        <div className="button-group">
+          <button type="submit">국가 추가</button>
+          <button type="button" onClick={handleUpdateCountry}>
+            업데이트
+          </button>
+        </div>
       </form>
       <div>
         {countries.length === 0 ? (
